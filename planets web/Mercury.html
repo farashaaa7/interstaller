@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Mega Menu Styles */
+        header{
+            background-color: #232D3F;
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px ;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: rgb(71, 71, 255);
+            font-weight: 500;
+            font-size: 1.1em;
+            padding-left: 20px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: #B9CFD4;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+            transition: 0.7s ease;
+        }
+
+        .logo:hover{
+          transform: scale(1.2);
+        }
+
+        .nav {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background-color: #f1f1f1;
+          border-radius: 20px;
+        }
+    
+        .nav > li {
+          display: inline-block;
+          position: relative;
+        }
+    
+        .nav > li > a {
+          display: block;
+          padding: 10px 20px;
+          color: #333;
+          border-radius: 15px;
+          text-decoration: none;
+          transition: 0.7s ease;
+        }
+    
+        .nav > li:hover > a {
+          background-color: #bdbdbd;
+        }
+    
+        .nav > li > .mega-menu {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 100%;
+          display: none;
+          background-color: #f1f1f1;
+          
+        }
+    
+        .nav > li:hover > .mega-menu {
+          display: block;
+          transition: 0.7s ease;
+        }
+    
+        .mega-menu > li {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+          border-radius: 15px;
+          
+        }
+    
+        .mega-menu > li > a {
+          display: block;
+          color: #333;
+          text-decoration: none;
+          
+        }
+    
+        .mega-menu > li > a:hover {
+          text-decoration: underline;
+        }
+
+        /*sections color*/
+
+        .definetion{
+          background-color: #7A8591;
+        }
+
+        .video{
+          background-color: #151617;
+          display: flex;
+          justify-content: center;
+        }
+
+        .related{
+          background-color: #151617;
+        }
+
+        .Properties{
+          background-color: #989B9E;
+        }
+
+        .Travel{
+          background-color: #09121B;
+          background: url(../planets/space.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          display: cover;
+        }
+        /*flipping card style*/
+
+        .related .content .card .card-inner .card-front{
+          background-color: #04364A;
+          border-color: #04364A;
+        }
+
+        .related .content .card .card-inner .card-back
+        {
+          background-color: #DAFFFB;
+          border-color: #DAFFFB;
+          color:black;
+        }
+
+        /*Travel cards*/
+        .Travel div{
+          background-color: #699BAE;
+        }
+      </style>
+</head>
+<body dir="rtl">
+    <header>
+        <a class="logo">The interstellar experiences</a>
+        <nav class="navigation">
+          <ul class="nav">
+              <li><a href="C:\Users\UGS01\OneDrive\سطح المكتب\nasaapps\slides\index.html">Home</a></li>
+              <li>
+                <a href="#">Planets</a>
+                <ul class="mega-menu">
+                  <li><a href="Mercury.html" target="_balnk">Mercury</a></li>
+                  <li><a href="Venus.html" target="_balnk">Venus</a></li>
+                  <li><a href="Mars.html" target="_balnk">Mars</a></li>
+                  <li><a href="#" target="_balnk">Jupyter</a></li>
+                  <li><a href="#" target="_balnk">Saturn</a></li>
+                  <li><a href="#" target="_balnk">Uranus</a></li>
+                  <li><a href="#" target="_balnk">Neptune</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">About us</a>
+                <ul class="mega-menu">
+                  <li><a href="#">who are us?</a></li>
+                  <li><a href="#">FNQ</a></li>
+                  <li><a href="#">resources</a></li>
+                </ul>
+              </li>
+          </ul>
+      </nav>
+    </header>
+    <section class="definetion">
+        <div class="cardBox">
+            <div class="card">
+              <span class="text">Definetion</span>
+              <div class="content">
+                <p>عطار كوكب مثير للإهتمام</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="video">
+      <video src="../Videos/Mercury.m4v" width="60%" height="80%" controls poster="../planets/Venus.jpg"></video>
+    </section>
+
+    <section class="related">
+        <div class="content">
+
+            <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <p>	درجة الحرارة على عطارد</p>
+                  </div>
+                  <div class="card-back">
+                    <p> ، ترتفع درجات الحرارة إلى مستويات تفوق 430 درجة مئوية، ما يجعلها أعلى من درجة الغليان للزئبق ذاته!  </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <p> 	الغلاف الجوى و الغازات على عطارد </p>
+                  </div>
+                  <div class="card-back">
+                    <p>ا هو خليط من الغازات، بما في ذلك الهيليوم (70%) والهيدروجين (29%) والنيتروجين (0.02%) والأكسجين (0.005%) .</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <p> •	إليك أهم الأماكن على عطارد للزيارة </p>
+                  </div>
+                  <div class="card-back">
+                    <p>	حوض كالوريس 	سهل كالوريس   البحار</p>
+                  </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="Properties">
+        <div class="content">
+            
+            <!-- img to txt -->
+            <div class="card-img-txt">
+                <img src="../Images/pexels-zch-12498782.jpg" width="400">
+                <div class="card__content">
+                  <p class="card__title">•	درجة الحرارة  </p>
+                  <p class="card__description"> عندما يأتي الليل، تتراجع درجات الحرارة لتصل إلى -180 درجة مئوية، وتجعل من العطلة في الجهة المظلمة تجربة غير معتادة تماماً.يعود سبب هذه الحرارة الشديدة إلى بعض الخصائص الفريدة لعطارد </p>
+                </div>
+              </div>
+            
+              <div class="card-img-txt">
+                <img src="../planets/Mercury.jpg" width="400">
+                <div class="card__content">
+                  <p class="card__title">•	الغلاف الجوى </p>
+                  <p class="card__description">  
+                    ولكن يؤثر الغلاف الجوي الرقيق لعطارد على الكوكب بعدة طرق، بما في ذلك:
+                    •	عدم قدرته على حماية عطارد من الإشعاع الشمسي، مما يجعل الكوكب مكانًا خطيرًا للحياة.
+                    •	عدم قدرته على حبس الحرارة من الشمس، مما يؤدي إلى درجات حرارة شديدة الحرارة والبرودة على الكوكب.
+                    •	عدم قدرته على حماية عطارد من الرياح الشمسية، وهي تيار من الجسيمات المشحونة التي تتدفق من الشمس.
+                    
+                  </p>
+                </div>
+              </div>
+              
+              <div class="card-img-txt">
+                <img src="../Images/pexels-photo-1229042.jpeg" width="400">
+                <div class="card__content">
+                  <p class="card__title">  •	إليك أهم الأماكن على عطارد للزيارة </p>
+                  <p class="card__description">  4.	فوهات صدمية: توجد فوهات صدمية على جميع الكواكب في النظام الشمسي، ولكن عطارد يحتوي على عدد كبير منها. تتشكل فوهات الصدمية نتيجة اصطدام الكوكب بأجسام أخرى في الفضاء. تتراوح أحجام فوهات الصدمية على عطارد من صغيرة جدًا إلى كبيرة جدًا، مثل فوهة صدمية كالوريس. </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="Travel">
+        <div class="row1">
+            <div class="Topic-1">
+                <h1>درجة الحرارة على عطارد</h1>
+                <div class="content">
+                    <p>
+                      •	نعد الرحلة إلى عطارد تجربة فريدة من نوعها، فهي تأخذك إلى عالم ملتهب تحت تأثير الشمس. إليك لمحة عن درجات الحرارة التي تجعل هذا الكوكب محط أنظار المستكشفين.
+•	الدرجات الحرارية:
+•	عطارد، كوكب الشمس الأقرب، يعيش تحت سطوع شديد للشمس. في النهار، ترتفع درجات الحرارة إلى مستويات تفوق 430 درجة مئوية، ما يجعلها أعلى من درجة الغليان للزئبق ذاته! ولكن عندما يأتي الليل، تتراجع درجات الحرارة لتصل إلى -180 درجة مئوية، وتجعل من العطلة في الجهة المظلمة تجربة غير معتادة تماماً.يعود سبب هذه الحرارة الشديدة إلى بعض الخصائص الفريدة لعطارد. بدأًا من مدارها الضيق حول الشمس، حيث يكون الاقتراب من الشمس أقوى وأسرع من أي كوكب آخر في النظام الشمسي. ونظرًا لعدم وجود غلاف جوي يقوم بتوزيع الحرارة بالتساوي، فإن الجهة المضاءة من عطارد تحترق من شدة الحرارة أثناء النهار. لذا فإذا كانت رحلة إلى عطارد هي في خططك، فاستعد لاختبار الطقس الأكثر تنوعًا في النظام الشمسي! إن التحديات الحرارية الفريدة تضيف جاذبية إضافية لهذا الكوكب الساخن .
+
+                    </p>  
+                    </div>
+            </div>
+        </div>
+        
+        <div class="row2">
+          <div class="Topic-1">
+            <h1>	الغلاف الجوى و الغازات على عطارد </h1>
+            <div class="content"><p>
+              عطارد هو أقرب كوكب إلى الشمس، ولذلك فهو يتعرض لدرجات حرارة شديدة الحرارة والبرودة. بالإضافة إلى ذلك، فإن عطارد له غلاف جوي رقيق للغاية، مما يجعل من الصعب حماية الكوكب من الإشعاع الشمسي.
+                الغلاف الجوي لعطارد هو خليط من الغازات، بما في ذلك الهيليوم (70%) والهيدروجين (29%) والنيتروجين (0.02%) والأكسجين (0.005%) والكالسيوم والبوتاسيوم. الغلاف الجوي لعطارد رقيق للغاية، بحيث يمكن أن يمر خلاله الضوء بسهولة. هذا يعني أنك ستتمكن من رؤية السماء السوداء الرائعة للكون من على سطح عطارد.
+                 ولكن يؤثر الغلاف الجوي الرقيق لعطارد على الكوكب بعدة طرق، بما في ذلك:
+                •	عدم قدرته على حماية عطارد من الإشعاع الشمسي، مما يجعل الكوكب مكانًا خطيرًا للحياة.
+                •	عدم قدرته على حبس الحرارة من الشمس، مما يؤدي إلى درجات حرارة شديدة الحرارة والبرودة على الكوكب.
+                •	عدم قدرته على حماية عطارد من الرياح الشمسية، وهي تيار من الجسيمات المشحونة التي تتدفق من الشمس.
+                على الرغم من التحديات التي يطرحها الغلاف الجوي لعطارد، إلا أنه لا يزال مكانًا رائعًا لاستكشافه. مع معدات الحماية المناسبة، يمكنك النجاة من المخاطر والتمتع بتجربة فضائية لا تُنسى.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row2">
+            <div class="Topic-1">
+                <h1>•	إليك أهم الأماكن على عطارد للزيارة</h1>
+                <div class="content"><p>
+                  1.	حوض كالوريس: أكبر حوض صدمي في النظام الشمسي، يُعتقد أنه تشكل نتيجة اصطدام بجسم كبير. يبلغ قطر حوض كالوريس 1550 كيلومترًا، وهو موطن لسلسلة جبال كالوريس، وهي مجموعة من الجبال تمتد لأكثر من 1500 كيلومتر. يبلغ عمق حوض كالوريس أكثر من 10 كيلومترات، وهو ما يكفي لإغراق جبل إيفرست.
+                  2.	سهل كالوريس: سهل محيطي واسع يغطي أكثر من ثلث سطح عطارد. يُعتقد أن سهل كالوريس تشكل نتيجة لصعود الصهارة من أعماق الكوكب منذ حوالي 3.8 مليار سنة.
+                  3.	البحار: مناطق مسطحة من الحمم البركانية تغطي جزءًا كبيرًا من سطح عطارد. تُعرف البحار على عطارد باسم "ماريز"، وهي تأتي بألوان مختلفة، مثل الأحمر والأسود والأبيض. تُعتقد أن البحار على عطارد تشكلت نتيجة لصعود الصهارة من أعماق الكوكب قبل حوالي 3.8 مليار سنة.
+                  4.	فوهات صدمية: توجد فوهات صدمية على جميع الكواكب في النظام الشمسي، ولكن عطارد يحتوي على عدد كبير منها. تتشكل فوهات الصدمية نتيجة اصطدام الكوكب بأجسام أخرى في الفضاء. تتراوح أحجام فوهات الصدمية على عطارد من صغيرة جدًا إلى كبيرة جدًا، مثل فوهة صدمية كالوريس.
+                  </p></div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="submit">
+        <a href="Venus.html" class="main-btn">Submit to the next Trip</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Mega Menu Styles */
+        header{
+            background-color: #232D3F;
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px ;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: rgb(71, 71, 255);
+            font-weight: 500;
+            font-size: 1.1em;
+            padding-left: 20px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: #B9CFD4;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+            transition: 0.7s ease;
+        }
+
+        .logo:hover{
+          transform: scale(1.2);
+        }
+
+        .nav {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background-color: #f1f1f1;
+          border-radius: 20px;
+        }
+    
+        .nav > li {
+          display: inline-block;
+          position: relative;
+        }
+    
+        .nav > li > a {
+          display: block;
+          padding: 10px 20px;
+          color: #333;
+          border-radius: 15px;
+          text-decoration: none;
+          transition: 0.7s ease;
+        }
+    
+        .nav > li:hover > a {
+          background-color: #bdbdbd;
+        }
+    
+        .nav > li > .mega-menu {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 100%;
+          display: none;
+          background-color: #f1f1f1;
+          
+        }
+    
+        .nav > li:hover > .mega-menu {
+          display: block;
+          transition: 0.7s ease;
+        }
+    
+        .mega-menu > li {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+          border-radius: 15px;
+          
+        }
+    
+        .mega-menu > li > a {
+          display: block;
+          color: #333;
+          text-decoration: none;
+          
+        }
+    
+        .mega-menu > li > a:hover {
+          text-decoration: underline;
+        }
+
+        /*sections color*/
+
+        .definetion{
+          background-color: #B06317;
+        }
+
+        .video{
+          background-color: #110804;
+          display: flex;
+          justify-content: center;
+        }
+
+        .related{
+          background-color: #110804;
+        }
+
+        .Properties{
+          background-color: #7C5C18;
+        }
+
+        .Travel{
+          background-color: #794A34;
+          background: url(../planets/space.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          display: cover;
+        }
+        /*flipping card style*/
+
+        .related .content .card .card-inner .card-front{
+          background-color: #E25E3E;
+          border-color: #E25E3E;
+        }
+
+        .related .content .card .card-inner .card-back
+        {
+          background-color: #FFBB5C;
+          border-color: #FFBB5C;
+          color:black;
+        }
+
+        /*Travel cards*/
+        .Travel div{
+          background-color: #699BAE;
+        }
+      </style>
+</head>
+<body dir="rtl">
+    <header>
+        <a class="logo">The interstellar experiences</a>
+        <nav class="navigation">
+          <ul class="nav">
+              <li><a>Home</a></li>
+              <li>
+                <a href="#">Planets</a>
+                <ul class="mega-menu">
+                  <li><a href="Mercury.html" target="_balnk">Mercury</a></li>
+                  <li><a href="Venus.html" target="_balnk">Venus</a></li>
+                  <li><a href="Mars.html" target="_balnk">Mars</a></li>
+                  <li><a href="#" target="_balnk">Jupyter</a></li>
+                  <li><a href="#" target="_balnk">Saturn</a></li>
+                  <li><a href="#" target="_balnk">Uranus</a></li>
+                  <li><a href="#" target="_balnk">Neptune</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">About us</a>
+                <ul class="mega-menu">
+                  <li><a href="#">who are us?</a></li>
+                  <li><a href="#">FNQ</a></li>
+                  <li><a href="#">resources</a></li>
+                </ul>
+              </li>
+          </ul>
+      </nav>
+    </header>
+    <section class="definetion">
+        <div class="cardBox">
+            <div class="card">
+              <span class="text">Planet Name</span>
+              <div class="content">
+                <p>Mars is very interesting planet</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="video">
+      <video src="../Videos/Mars.m4v" width="60%" height="80%" controls poster="../planets/Venus.jpg"></video>
+    </section>
+
+
+    <section class="Properties">
+        <div class="content">
+            
+            <!-- img to txt -->
+            <div class="card-img-txt">
+                <img src="../Images/pexels-photo-8474701.jpeg" width="400">
+                <div class="card__content">
+                  <p class="card__title">مكان مشوق</p>
+                  <p class="card__description">•	فوهة صدمية كولهول: هي فوهة صدمية كبيرة يبلغ قطرها حوالي 30 كيلومترًا</p>
+                </div>
+              </div>
+            
+              <div class="card-img-txt">
+                <img src="../Images/pexels-rdne-stock-project-8474500.jpg" width="400">
+                <div class="card__content">
+                  <p class="card__title">مكان رائع</p>
+                  <p class="card__description">•	فوهة صدمية هيكتور: هي فوهة صدمية كبيرة يبلغ قطرها حوالي 50 كيلومترًا. تم العثور على العديد من القطع الصخرية ذات الأهمية العلمية في هذه المنطقة، بما في ذلك أحجار تحتوي على علامات على وجود حياة سابقة</p>
+                </div>
+              </div>
+
+              <div class="card-img-txt">
+                <img src="../Images/pexels-spacex-586030.jpg" width="400">
+                <div class="card__content">
+                  <p class="card__title">مكان ممتاز</p>
+                  <p class="card__description"> •	بحيرة هارولد: هي بحيرة من الجليد الجاف تم اكتشافها في القطب الشمالي للمريخ. يبلغ قطرها حوالي 200 كيلومتر. </p>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="Travel">
+              <div class="row1">
+                  <div class="Topic-1">
+                      <h1>بعض الحقائق عنه</h1>
+                      <div class="content"><p>
+                        مرحبًا بكم في رحلتنا الفريدة إلى كوكب المريخ، العالم الأحمر الغامض الذي أثار دهشة البشر لقرون. هل تساءلت يومًا كيف يمكن أن يكون الجو هناك؟ وماذا عن درجات الحرارة التي تنتظرك؟ دعونا نلقي نظرة أعمق!
+
+درجات الحرارة على المريخ:
+
+تختلف درجات الحرارة على المريخ بشكل مدهش عن تلك التي نعرفها على الأرض. في الواقع، يمكن أن تصل درجات الحرارة في النهار إلى حوالي 20 درجة مئوية تحت الصفر، في حين يمكن أن تنخفض في الليل إلى حوالي 80 درجة مئوية تحت الصفر! هذا يعني أنه عندما تزور المريخ، عليك أن تكون جاهزًا للتعامل مع برودة فائقة.
+
+الغلاف الجوي الغامض:
+
+في رحلتك إلى المريخ، ستتعامل مع غلاف جوي يختلف تمامًا عن الأرض. المريخ يملك غلافًا رقيقًا جدًا مقارنة بالأرض، وهو يتكون بشكل رئيسي من غاز ثاني أكسيد الكربون. هذا يعني أن الهواء على المريخ لا يحتوي على ما يكفي من الأوكسجين لدعم الحياة كما نعرفها.
+
+المغامرة التي لا تُنسى:
+
+بالإضافة إلى التحديات الجوية والحرارية، ستنغمس في مناظر طبيعية فريدة من نوعها تشمل صحاري حمراء شاسعة وجبال مذهلة. ستكون تلك اللحظات التي لا تُنسى على طول هذه الرحلة، حيث يمكنك تجربة العالم بأكمله بطريقة لم تتخيلها.
+فيما يلي أهم الأماكن للزيارة على كوكب المريخ، مع ذكر المصادر:
+•	وادي مارينر: يعد وادي مارينر أكبر وأشهر ميزة جيولوجية على كوكب المريخ. يبلغ طوله حوالي 4000 كيلومتر وعرضه 200 كيلومتر وعمقه يصل إلى 10 كيلومترات. تم تشكيل الوادي على الأرجح من خلال عملية هبوط ضخمة للكتلة الأرضية.
+•	أوليمبوس مونس: هو بركان خامد يقع في فوهة صدمية كبيرة. يبلغ ارتفاعه حوالي 22 كيلومترًا، وهو أعلى جبل في النظام الشمسي بأكمله.
+•	تيرا فيرميا: هي منطقة على سطح المريخ تُظهر علامات على وجود ماء سائل في الماضي. تم العثور على رواسب صلبة من المواد التي تتكون عادة في وجود الماء في هذه المنطقة.
+•	خليج شيبارد: هو فوهة صدمية كبيرة يبلغ قطرها حوالي 250 كيلومترًا. تم العثور على العديد من القطع الصخرية ذات الأهمية العلمية في هذه المنطقة، بما في ذلك أحجار تحتوي على ماء سائل.
+•	دلتا نهر هيديرا: هي دلتا نهر جافة يبلغ عرضها حوالي 200 كيلومتر. تم تشكيلها على الأرجح من قبل نهر قديم كان يتدفق عبر كوكب المريخ في الماضي.
+•	بحيرة أوديسا: هي بحيرة من الجليد الجاف تم اكتشافها في القطب الشمالي للمريخ. يبلغ قطرها حوالي 200 كيلومتر.
+</p></div>
+                  </div>
+                  
+              </div>
+              <div class="row2">
+                  <div class="Topic-1">
+                      <h1> نصائح للسفر</h1>
+                      <div class="content">
+                      <p>
+                        .•	ضع خريطة للكهوف الفضائية: يمكن أن تحتاج إلى البحث عن كهوف فضائية للملجأ في حالة ظهور عاصفة رملية مفاجئة. احرص على أن تضع خريط
+                        •	احم حميتك: يمكن أن تكون الزراعة صعبة على المريخ، لذا حافظ على حميتك واحرص على تناول المواد الغذائية المعبأة بعناية للحفاظ على صحتك.
+                        •	
+                        ارتدي ملابس مضادة للإشعاع: المريخ يتعرض لمزيد من الإشعاع الشمسي من الأرض بسبب غياب الغلاف الجوي الواقي. لذا، تأكد من ارتداء ملابس تحميك من الإشعاع الفضائي
+                        •	لا تفوت فرصة التزلج على الرمال: اعتبر العاصفة الرملية فرصة للتزلج على الرمال بدلاً من مجرد مشكلة. احضر لوح تزلج فضائي واستمتع بمغامرة تزلج فريدة على سطح المريخ!
+                        اسم "الكوكب الأحمر" هو لقب شهير يُطلق على كوكب المريخ. هذا اللقب يعود إلى لونه المميز الذي يظهر في السماء والذي يميل إلى اللون الأحمر أو البرتقالي.
+                        
+                        المريخ يظهر عند الرصد من الأرض بلون أحمر ساطع نتيجة لاحتوائه على طبقة من الغبار الأحمر على سطحه. هذا اللون الأحمر تجعله الكوكب الوحيد الذي يظهر بهذا الشكل الواضح في السماء، وهذا ما أثار دهشة واهتمام البشر لقرون طويلة.بالإضافة إلى ذلك، لون المريخ المميز ساعد في تطوير تسميته بهذا اللقب. يذكر أن هذا اللقب هو جزء من تقاليد الثقافات القديمة حيث أطلقوا الأسماء الشائعة على الكواكب والنجوم بناءً على مظهرها ومنظرها في السماء.
+                        
+                      </p>
+                        
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="row2">
+                <div class="Topic-1">
+                    <h1> أشياء مدهشة </h1>
+                    <div class="content">
+                    <p>
+                      •	وجد العلماء مركبات عضوية في عينات صخور المريخ. تعتبر المركبات العضوية ضرورية لحياة كما نعرفها، لذلك يشير وجودها إلى أن المريخ كان يحتوي على بيئة يمكن أن تدعم الحياة في الماضي.
+                      •	وجد العلماء رواسب جيولوجية قد تكون تشكلت بواسطة المياه الجارية. تشير هذه الرواسب إلى أن المريخ كان يحتوي على كمية كبيرة من المياه السائلة في الماضي، وهو شرط أساسي لحياة كما نعرفها.
+                      •	وجد العلماء علامات على العوامل الجوية القديمة على سطح المريخ. تشير هذه العوامل الجوية إلى أن المريخ كان لديه غلاف جوي أكثر سمكًا في الماضي، مما كان من شأنه أن يوفر الحماية اللازمة للحياة من الإشعاع الشمسي.
+                      و لكن بعد كل هذا هل تظن انه يوجد حياة على المريخ ؟ هذا ما سوف نكتشفه فى رحلاتنا القادمة
+                      
+                    </p>
+                      
+                    </div>
+                </div>
+            </div>
+          </section>
+    <section class="submit">
+        <a href="#project" class="main-btn">Submit to the program</a>
+    </section>
+</body>
+</html>

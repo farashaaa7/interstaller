@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Mega Menu Styles */
+        header{
+            background-color: #232D3F;
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px ;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: rgb(71, 71, 255);
+            font-weight: 500;
+            font-size: 1.1em;
+            padding-left: 20px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: #B9CFD4;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+            transition: 0.7s ease;
+        }
+
+        .logo:hover{
+          transform: scale(1.2);
+        }
+
+        .nav {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background-color: #f1f1f1;
+          border-radius: 20px;
+        }
+    
+        .nav > li {
+          display: inline-block;
+          position: relative;
+        }
+    
+        .nav > li > a {
+          display: block;
+          padding: 10px 20px;
+          color: #333;
+          border-radius: 15px;
+          text-decoration: none;
+          transition: 0.7s ease;
+        }
+    
+        .nav > li:hover > a {
+          background-color: #bdbdbd;
+        }
+    
+        .nav > li > .mega-menu {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 100%;
+          display: none;
+          background-color: #f1f1f1;
+          
+        }
+    
+        .nav > li:hover > .mega-menu {
+          display: block;
+          transition: 0.7s ease;
+        }
+    
+        .mega-menu > li {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+          border-radius: 15px;
+          
+        }
+    
+        .mega-menu > li > a {
+          display: block;
+          color: #333;
+          text-decoration: none;
+          
+        }
+    
+        .mega-menu > li > a:hover {
+          text-decoration: underline;
+        }
+
+        /*sections color*/
+
+        .definetion{
+          background-color: #AA9468;
+        }
+
+        .video{
+          background-color: #110804;
+          display: flex;
+          justify-content: center;
+        }
+
+        .related{
+          background-color: #7C7C62;
+        }
+
+        .Properties{
+          background-color: #747474;
+        }
+
+        .Travel{
+          background-color: #09121B;
+          background: url(../planets/space.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          display: cover;
+        }
+        /*flipping card style*/
+
+        .related .content .card .card-inner .card-front{
+          background-color: #04364A;
+          border-color: #04364A;
+        }
+
+        .related .content .card .card-inner .card-back
+        {
+          background-color: #DAFFFB;
+          border-color: #DAFFFB;
+          color:black;
+        }
+
+        /*Travel cards*/
+        .Travel div{
+          background-color: #699BAE;
+        }
+      </style>
+</head>
+<body dir="rtl">
+    <header>
+        <a class="logo">The interstellar experiences</a>
+        <nav class="navigation">
+            <ul class="nav">
+                <li><a>Home</a></li>
+                <li>
+                  <a href="#">Planets</a>
+                  <ul class="mega-menu">
+                    <li><a href="Mercury.html" target="_balnk">Mercury</a></li>
+                    <li><a href="Venus.html" target="_balnk">Venus</a></li>
+                    <li><a href="Mars.html" target="_balnk">Mars</a></li>
+                    <li><a href="#" target="_balnk">Jupyter</a></li>
+                    <li><a href="#" target="_balnk">Saturn</a></li>
+                    <li><a href="#" target="_balnk">Uranus</a></li>
+                    <li><a href="#" target="_balnk">Neptune</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                  <ul class="mega-menu">
+                    <li><a href="#">who are us?</a></li>
+                    <li><a href="#">FNQ</a></li>
+                    <li><a href="#">resources</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="definetion">
+        <div class="cardBox">
+            <div class="card">
+              <span class="text">Planet Name</span>
+              <div class="content">
+                <p>Venus is very interesting planet</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="video">
+      <video src="../Videos/Venus.m4v" width="60%" height="80%" controls poster="../planets/Venus.jpg"></video>
+    </section>
+
+    <section class="related">
+        <div class="content">
+
+            <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <p>مكان رائع</p>
+                  </div>
+                  <div class="card-back">
+                    <p>•	جبال ماكسويل: وهي أعلى جبال على كوكب الزهرة، وتبلغ ارتفاعها حوالي 11 كيلومترًا.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <p>معلومة مشوقة</p>
+                  </div>
+                  <div class="card-back">
+                    <p> •	يدور كوكب الزهرة حول محوره عكس عقارب الساعة، وهو الأمر الوحيد في المجموعة الشمسية. </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <p>نصيحة </p>
+                  </div>
+                  <div class="card-back">
+                    <p>احضر معك مرطب. ستحتاجه لترطيب بشرتك </p>
+                  </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="Properties">
+        <div class="content">
+            
+            <!-- img to txt -->
+            <div class="card-img-txt">
+              <img src="../Images/pexels-photo-8474703.jpeg" width="400">
+              <div class="card__content">
+                <p class="card__title">معلومة 1</p>
+                <p class="card__description">•	كوكب الزهرة هو الكوكب الأكثر شبهاً بالأرض في النظام الشمسي، حيث يشبهه في الحجم والتركيب الأساسي.
+                  •	يدور كوكب الزهرة حول محوره عكس عقارب الساعة، وهو الأمر الوحيد في المجموعة الشمسية.
+                  •	الغلاف الجوي لكوكب الزهرة كثيف جدًا، مما يجعل درجة الحرارة على سطحه شديدة الحرارة.
+                  •	لا يوجد على كوكب الزهرة أي أقمار، وهو أيضًا الأمر الوحيد في المجموعة الشمسية.
+                  بالطبع! يمكنك دمج النصائح الخيالية والجادة بطريقة تجعل القارئ يستمتع ويستفيد في نفس الوقت. إليك نموذج لنصائح يمكن دمجها:
+                  </p>
+              </div>
+            </div>
+            
+            <div class="card-img-txt">
+              <img src="../planets/Venus.jpg" width="400">
+                <div class="card__content">
+                  <p class="card__title">معلومة 2</p>
+                  <p class="card__description">  •	جبال ماكسويل: وهي أعلى جبال على كوكب الزهرة، وتبلغ ارتفاعها حوالي 11 كيلومترًا.
+                    •	سهول عشتار: وهي سلسلة طويلة من السهول البركانية، وتغطي حوالي 70% من سطح الزهرة.
+                    •	حفر الصدمات: وهي حفر كبيرة نجمت عن اصطدام الكويكبات والمذنبات بسطح الزهرة
+                    </p>
+                </div>
+              </div>
+
+              <div class="card-img-txt">
+                <img src="../Images/pexels-zch-12491601.jpg" width="400">
+                <div class="card__content">
+                  <p class="card__title">معلومة 3</p>
+                  <p class="card__description"> **حماية من الحرارة المطلقة:** ارتدي بدلة الفضاء المصممة لتحمل درجات الحرارة القاسية على سطح الزهرة. بجانب ذلك، لا تنسَ أن تحمل معك زجاجة ماء باردة بتقنية فضائية، فقد تكون كميات من المياه الباردة مفيدة لتخفيف الحرارة.
+                    2. **تحمل الضغوط الفضائية:** قم باختيار مركبة فضائية متينة ومجهزة بمحرك صاروخي قوي للتحمل الجيد للضغوط العالية على سطح الزهرة. 	
+                    3. **مواجهة العواصف الرعدية الحمضية:** تحتاج إلى تجهيز نفسك بوسائل للوقاية من العواصف الرعدية الحمضية. يمكنك أيضًا استخدام مظلة سحابية تقوم بحمايتك من هذه الظروف الجوية القوية
+                     </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="Travel">
+        <div class="row1">
+            <div class="Topic-1">
+                <h1>بعض الحقائق عنه</h1>
+                <div class="content"><p>
+                  إنها رحلة استكشافية نحو عالم يجمع بين سحر الكواكب والغموض العلمي. نتحدث عن الزهرة، توأم الأرض الذي يخفي في أعماقه أسراراً مدهشة. تعالوا معنا في هذه الرحلة المثيرة واستعدوا لمغامرة لا تُنسى.
+                  الدرجات الحرارية القياسية: تعتبر الزهرة، الملقبة بـ "كوكب اللهب"، من بين أكثر الكواكب حرارة في النظام الشمسي. تتجاوز درجات الحرارة السطحية هناك 470 درجة مئوية، وهو ما يجعلها أساخن من سطح عطارد نفسه! يعتبر هذا التحدي الحراري تجربة مثيرة للمستكشفين الجريئين.
+                  غموض الغلاف الجوي: ليس فقط الزهرة ساخنة، بل لديها أيضًا غلاف جوي كثيف ومكثف يتكون أساساً من ثاني أكسيد الكربون. هذه التكوينات الجوية المعقدة تخفي الكثير من الأسرار حول الطبيعة الحقيقية لهذا الكوكب المدهش.
+                  توأم الأرض: بالرغم من الاختلافات الواضحة، يشترك الزهرة مع الأرض في العديد من الخصائص المدهشة. إنه الكوكب الأكثر شبها بالأرض في النظام الشمسي، ورغم تحولاته الجوية القوية والظروف القاسية، إلا أنه يظل يحتفظ ببعض الألغاز التي لم تتم الإجابة عنها بعد.
+                  التحديات والاستكشاف: ستتيح لك رحلتك إلى الزهرة فرصة فريدة لاستكشاف هذا العالم الساحر والمليء بالألوان والأسرار. ستشهد مناظر شروق الشمس الرائعة وتحظى بفرصة لفهم تضاريس هذا الكوكب الفريد
+                </p></div>
+            </div>
+            
+        </div>
+        <div class="row2">
+            <div class="Topic-1">
+                <h1>نصائح للذهاب </h1>
+                <div class="content">
+                <p>
+                  . **حماية من الحرارة المطلقة:** ارتدي بدلة الفضاء المصممة لتحمل درجات الحرارة القاسية على سطح الزهرة. بجانب ذلك، لا تنسَ أن تحمل معك زجاجة ماء باردة بتقنية فضائية، فقد تكون كميات من المياه الباردة مفيدة لتخفيف الحرارة.
+2. **تحمل الضغوط الفضائية:** قم باختيار مركبة فضائية متينة ومجهزة بمحرك صاروخي قوي للتحمل الجيد للضغوط العالية على سطح الزهرة. 
+3. **مواجهة العواصف الرعدية الحمضية:** تحتاج إلى تجهيز نفسك بوسائل للوقاية من العواصف الرعدية الحمضية. يمكنك أيضًا استخدام مظلة سحابية تقوم بحمايتك من هذه الظروف الجوية القوية.
+4. **تدريب مكثف:** قم بالتحضير الجيد قبل رحلتك من تدريب مكثف على الظروف القاسية. ضمن التحضيرات الجادة، لا تنسَ أن تحمل معك حيواناً اليف كرفيق ملهم ومسلي و الى بعض الاصدقاء.
+5. **تحضير للمفاجآت:** لا تنسَ أن تكون على دراية بالمخاطر وكيفية التعامل معها. ومع ذلك، يمكنك أيضًا الاستمتاع بالرحلة بوجود نظارات شمسية فضائية لكى تستمتع بالمنظر الخلاب !
+6** احضر معك واقي من الشمس. ستحتاجه لحماية بشرتك من أشعة الشمس الحارقة
+. احضر معك مرطب. ستحتاجه لترطيب بشرتك من الحرارة الشديدة.
+ احضر معك حذاء رياضي مريح. ستحتاجه للسير على الصخور البركانية الحادة
+. احضر معك طعامًا وشرابًا كافيين. ستحتاجهما للبقاء على قيد الحياة في الحرارة الشديدة
+. احضر معك كاميرا. ستحتاجها لالتقاط صور لنفسك وأنت تمشي على سطح كوكب الزهرة.
+
+                </p>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="row2">
+          <div class="Topic-1">
+              <h1>ماذا ترون هناك</h1>
+              <div class="content">
+              <p>
+                سترى في رحلتك إلى كوكب الزهرة العديد من المناظر الطبيعية الخلابة، مثل:
+•	جبال ماكسويل: وهي أعلى جبال على كوكب الزهرة، وتبلغ ارتفاعها حوالي 11 كيلومترًا.
+•	سهول عشتار: وهي سلسلة طويلة من السهول البركانية، وتغطي حوالي 70% من سطح الزهرة.
+•	حفر الصدمات: وهي حفر كبيرة نجمت عن اصطدام الكويكبات والمذنبات بسطح الزهرة.
+•	الوديان العميقة: وهي وديان عميقة جداً، وتصل بعضها إلى عمق 5 كيلومترات.
+حقائق مثيرة للاهتمام حول كوكب الزهرة:
+•	كوكب الزهرة هو الكوكب الأكثر شبهاً بالأرض في النظام الشمسي، حيث يشبهه في الحجم والتركيب الأساسي.
+•	يدور كوكب الزهرة حول محوره عكس عقارب الساعة، وهو الأمر الوحيد في المجموعة الشمسية.
+•	الغلاف الجوي لكوكب الزهرة كثيف جدًا، مما يجعل درجة الحرارة على سطحه شديدة الحرارة.
+•	لا يوجد على كوكب الزهرة أي أقمار، وهو أيضًا الأمر الوحيد في المجموعة الشمسية.
+بالطبع! يمكنك دمج النصائح الخيالية والجادة بطريقة تجعل القارئ يستمتع ويستفيد في نفس الوقت. إليك نموذج لنصائح يمكن دمجها:
+
+              </p>
+                
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="submit">
+        <a href="Mars.html" class="main-btn">Submit to the next Trip</a>
+    </section>
+</body>
+</html>
